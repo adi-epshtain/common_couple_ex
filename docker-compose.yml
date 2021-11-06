@@ -1,0 +1,9 @@
+version: "3"
+services:
+  common_couple:
+    build: .
+    stdin_open: true # stdin_open and tty tag is used to keep my container running.
+    tty: true
+    ports:
+      - "8080:8080"
+
